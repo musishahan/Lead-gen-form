@@ -49,6 +49,44 @@ chat='false'>
         <p id="thankYouMessage" style="display: none;">Thanks for submitting the form!</p>
     </div>
 
+    <form id="form_2">
+        <label for="first_name">First Name:</label><br>
+        <input type="text" id="first_name_2" name="First name" required><br>
+        
+        <label for="last_name">Last Name:</label><br>
+        <input type="text" id="last_name_2" name="Last name" required><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email_2" name="Email" required><br>
+        
+        <label for="mobile">Mobile:</label><br>
+        <input type="tel" id="mobile_2" name="Mobile" required><br>
+        
+        <label for="company_name">Company Name:</label><br>
+        <input type="text" id="company_name_2" name="Company name" required><br><br>
+        
+<input type="submit" onclick="identify_call()">
+
+    </form>
+
+ <script>
+        function identify_call() {
+            var new_contact = {
+                "First name": document.getElementById("first_name_2").value,
+                "Last name": document.getElementById("last_name_2").value,
+                "Email": document.getElementById("email_2").value,
+                "Alternate contact number": document.getElementById("mobile_2").value,
+                "User Agent":"testing123909",
+                "company": {
+                    "Name": document.getElementById("company_name_2").value
+                }
+            };
+            var identifier = document.getElementById("email_2").value; // Using email as identifier
+            fwcrm.identify(identifier, new_contact);
+            
+        }
+    </script>
+
     <script>
         function handleSubmit(event) {
             event.preventDefault();
