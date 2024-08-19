@@ -62,6 +62,14 @@ chat='true'>
     </form> -->
 
  <script>
+   function Activity(e){
+            e.preventDefault(); // Prevent default action if e is provided
+        var button = document.getElementById("btn");
+        if (button) {
+            button.addEventListener("click", displayDate);
+            console.log("checked");
+        }
+	 
 	 console.log("DEnny")
         function identify_call(e) {
 	e.preventDefault();	
@@ -79,16 +87,9 @@ chat='true'>
             
             console.log("ran script");
 
-		Activity();
-            
+		
         }
-   function Activity(e){
-            e.preventDefault(); // Prevent default action if e is provided
-        var button = document.getElementById("btn");
-        if (button) {
-            button.addEventListener("click", displayDate);
-            console.log("checked");
-        }
+
 	    
 	  
      
