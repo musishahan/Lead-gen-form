@@ -69,6 +69,12 @@ chat='true'>
             button.addEventListener("click", displayDate);
             console.log("checked");
         }
+
+	   FM.trackCustomEvent("Added to cart", {
+	"email": document.getElementById("email_2").value,
+	"price": 100.21
+	   });
+   }
 	 
 	 console.log("DEnny");
         function identify_call(e) {
@@ -86,13 +92,7 @@ chat='true'>
             fwcrm.identify(identifier, new_contact);
             
             console.log("ran script");
-
-		
-        }
-
-	    
-	  
-     
+	}
   
 </script>
 
