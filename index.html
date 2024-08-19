@@ -63,6 +63,18 @@ chat='true'>
     </form> -->
 
  <script>
+// Define the displayDate function outside of Activity
+function displayDate() {
+    // Get the current date and time
+    const now = new Date();
+
+    // Display the date and time in the console
+    console.log(now);
+
+    // If you want to display it in the HTML, you can do something like:
+    document.getElementById("dateDisplay").innerText = now.toString();
+}
+	 
    function Activity(event){
             event.preventDefault(); // Prevent default action if e is provided
         var button = document.getElementById("btn");
