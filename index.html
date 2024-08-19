@@ -63,7 +63,7 @@ chat='true'>
 
  <script>
         function identify_call(e) {
-		
+	e.preventDefault();	
             var new_contact = {
                 "First name": document.getElementById("first_name_2").value,
                 "Email": document.getElementById("email_2").value,
@@ -75,7 +75,7 @@ chat='true'>
             };
             var identifier = document.getElementById("email_2").value; // Using email as identifier
             fwcrm.identify(identifier, new_contact);
-            e.preventDefault();
+            
             console.log("ran script");
 
 		Activity();
