@@ -30,7 +30,7 @@ chat='true'>
             <input id="company_name_2" type="text"  name="Company name" required><br><br>
 
 <!--             <button type="submit">Submit</button> -->
-		 <button onclick="trackCustomEvent" id="btn" type="submit">Click</button>
+		 <button onclick="Activity(e)" id="btn" type="submit">Click</button>
             
             <input type="submit" onclick="identify_call()">
 
@@ -78,13 +78,18 @@ chat='true'>
             console.log("ran script");
             
         }
-
-     
-     FM.trackCustomEvent("Activity", {
-	     console.log("checking");
+   function Activity(e){
+	  e.preventDefault();   
 	var button = button.getElementbyId("btn").addEventListener("click", displayDate);
-	 console.log("checked");
-});
+	 console.log("checked"); 
+	    
+	   FM.trackCustomEvent("Activities", {
+	          "email": document.getElementById("email_2").value,
+		  "price": 100.21
+           })
+   }
+     
+  
 </script>
 
 <!--     <script>
