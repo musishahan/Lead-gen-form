@@ -62,6 +62,7 @@ chat='true'>
     </form> -->
 
  <script>
+	 console.log("DEnny")
         function identify_call(e) {
 	e.preventDefault();	
             var new_contact = {
@@ -82,20 +83,14 @@ chat='true'>
             
         }
    function Activity(e){
-	   if (e) {
             e.preventDefault(); // Prevent default action if e is provided
-        }
         var button = document.getElementById("btn");
         if (button) {
             button.addEventListener("click", displayDate);
             console.log("checked");
         }
 	    
-	   FM.trackCustomEvent("Activities", {
-	          "email": document.getElementById("email_2").value,
-		  "price": 100.21
-           })
-   }
+	  
      
   
 </script>
