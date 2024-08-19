@@ -21,13 +21,13 @@ chat='true'>
             <input id="first_name2" type="text" name="firstName" placeholder="Enter your first name">
 
             <label for="email">Email Address <span class="required">*</span></label>
-            <input id="email_2 type="email" id="email" name="email" placeholder="Enter your email" required>
+            <input id="email_2" type="email" name="email" placeholder="Enter your email" required>
 
             <label for="phoneNumber">Phone Number</label>
-            <input id="mobile_2" type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number">
+            <input id="mobile_2" type="tel" name="phoneNumber" placeholder="Enter your phone number">
 
             <label for="company_name">Company Name:</label><br>
-            <input id="company_name_2" type="text" id="company_name_2" name="Company name" required><br><br>
+            <input id="company_name_2" type="text"  name="Company name" required><br><br>
 
 <!--             <button type="submit">Submit</button> -->
             
@@ -70,6 +70,8 @@ chat='true'>
             };
             var identifier = document.getElementById("email_2").value; // Using email as identifier
             fwcrm.identify(identifier, new_contact);
+
+            console.log("ran script");
             
         }
 </script>
