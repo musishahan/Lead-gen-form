@@ -82,9 +82,14 @@ chat='true'>
             
         }
    function Activity(e){
-	  e.preventDefault();   
-	var button = button.getElementbyId("btn").addEventListener("click", displayDate);
-	 console.log("checked"); 
+	   if (e) {
+            e.preventDefault(); // Prevent default action if e is provided
+        }
+        var button = document.getElementById("btn");
+        if (button) {
+            button.addEventListener("click", displayDate);
+            console.log("checked");
+        }
 	    
 	   FM.trackCustomEvent("Activities", {
 	          "email": document.getElementById("email_2").value,
