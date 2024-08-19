@@ -18,7 +18,7 @@ chat='true'>
             <h2>Contact Us</h2>
             
             <label for="firstName">First Name</label>
-            <input id="first_name2" type="text" name="firstName" placeholder="Enter your first name">
+            <input id="first_name_2" type="text" name="firstName" placeholder="Enter your first name">
 
             <label for="email">Email Address <span class="required">*</span></label>
             <input id="email_2" type="email" name="email" placeholder="Enter your email" required>
@@ -59,17 +59,17 @@ chat='true'>
 
  <script>
         function identify_call() {
-            var new_contact = {
-                "First name": document.getElementById("first_name_2").value,
-                "Email": document.getElementById("email_2").value,
-                "Alternate contact number": document.getElementById("mobile_2").value,
-                "User Agent":"testing123909",
-                "company": {
-                    "Name": document.getElementById("company_name_2").value
-                }
-            };
-            var identifier = document.getElementById("email_2").value; // Using email as identifier
-            fwcrm.identify(identifier, new_contact);
+            // var new_contact = {
+            //     "First name": document.getElementById("first_name_2").value,
+            //     "Email": document.getElementById("email_2").value,
+            //     "Alternate contact number": document.getElementById("mobile_2").value,
+            //     "User Agent":"testing123909",
+            //     "company": {
+            //         "Name": document.getElementById("company_name_2").value
+            //     }
+            // };
+            // var identifier = document.getElementById("email_2").value; // Using email as identifier
+            // fwcrm.identify(identifier, new_contact);
 
             console.log("ran script");
             
