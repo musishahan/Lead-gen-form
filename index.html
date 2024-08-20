@@ -33,7 +33,7 @@ chat='true'>
 		<button onclick="Activity(event)" id="btn" type="button">Click</button>
 
             
-            <input type="submit" onclick="identify_call(event)">
+            <input type="submit" onclick="identify_call()">
 
            
             
@@ -83,8 +83,8 @@ chat='true'>
 //    }
 	 
 	 console.log("DEnny");
-        function identify_call(event) {
-		event.preventDefault;
+        function identify_call() {
+		
             var new_contact = {
                 "First name": document.getElementById("first_name_2").value,
                 "Email": document.getElementById("email_2").value,
