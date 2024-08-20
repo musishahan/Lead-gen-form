@@ -64,23 +64,23 @@ chat='true'>
 
  <script>
 // Define the displayDate function outside of Activity
-function displayDate() {
-    const now = new Date();
-    console.log(now);
-}
+// function displayDate() {
+//     const now = new Date();
+//     console.log(now);
+// }
 	 
-function Activity(event){
-             event.preventDefault(); // Prevent default action if e is provided
-        var button = document.getElementById("btn");
-        if (button) {
-            button.addEventListener("click", displayDate);
-            console.log("checked");
-        }	
-	   FM.trackCustomEvent("Added to cart", {
-	"email": document.getElementById("email_2").value,
-	"price": 100.21
-	   });
-   }
+// function Activity(event){
+//              event.preventDefault(); // Prevent default action if e is provided
+//         var button = document.getElementById("btn");
+//         if (button) {
+//             button.addEventListener("click", displayDate);
+//             console.log("checked");
+//         }	
+// 	   FM.trackCustomEvent("Added to cart", {
+// 	"email": document.getElementById("email_2").value,
+// 	"price": 100.21
+// 	   });
+//    }
 	 
 	 console.log("DEnny");
         function identify_call(event) {
