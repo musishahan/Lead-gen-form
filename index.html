@@ -30,10 +30,10 @@ chat='true'>
             <input id="company_name_2" type="text"  name="Company name" required><br><br>
 
 <!--             <button type="submit">Submit</button> -->
-		<button onclick="Activity(event)" id="btn" type="button">Click</button>
+		<button onclick="Activity()" id="btn" type="button">Click</button>
 
             
-            <input type="submit" onclick="identify_call()">
+            <input type="submit" onclick="identify_call(e)">
 
            
             
@@ -75,8 +75,8 @@ function displayDate() {
     // document.getElementById("dateDisplay").innerText = now.toString();
 }
 	 
-   function Activity(event){
-            event.preventDefault(); // Prevent default action if e is provided
+   function Activity(){
+            // event.preventDefault(); // Prevent default action if e is provided
         var button = document.getElementById("btn");
         if (button) {
             button.addEventListener("click", displayDate);
@@ -90,8 +90,8 @@ function displayDate() {
    }
 	 
 	 console.log("DEnny");
-        function identify_call() {
-		
+        function identify_call(e) {
+		e.preventDefault;
             var new_contact = {
                 "First name": document.getElementById("first_name_2").value,
                 "Email": document.getElementById("email_2").value,
