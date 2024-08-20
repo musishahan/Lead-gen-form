@@ -30,10 +30,10 @@ chat='true'>
             <input id="company_name_2" type="text"  name="Company name" required><br><br>
 
 <!--             <button type="submit">Submit</button> -->
-		<button onclick="Activity()" id="btn" type="button">Click</button>
+		<button onclick="Activity(event)" id="btn" type="button">Click</button>
 
             
-            <input type="submit" onclick="identify_call(e)">
+            <input type="submit" onclick="identify_call(event)">
 
            
             
@@ -65,24 +65,17 @@ chat='true'>
  <script>
 // Define the displayDate function outside of Activity
 function displayDate() {
-    // Get the current date and time
     const now = new Date();
-
-    // Display the date and time in the console
     console.log(now);
-
-    // If you want to display it in the HTML, you can do something like:
-    // document.getElementById("dateDisplay").innerText = now.toString();
 }
 	 
-   function Activity(){
-            // event.preventDefault(); // Prevent default action if e is provided
+function Activity(event){
+             event.preventDefault(); // Prevent default action if e is provided
         var button = document.getElementById("btn");
         if (button) {
             button.addEventListener("click", displayDate);
             console.log("checked");
-        }
-
+        }	
 	   FM.trackCustomEvent("Added to cart", {
 	"email": document.getElementById("email_2").value,
 	"price": 100.21
@@ -90,7 +83,7 @@ function displayDate() {
    }
 	 
 	 console.log("DEnny");
-        function identify_call(e) {
+        function identify_call(event) {
 		e.preventDefault;
             var new_contact = {
                 "First name": document.getElementById("first_name_2").value,
