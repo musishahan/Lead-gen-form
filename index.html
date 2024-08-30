@@ -18,13 +18,13 @@ chat='true'>
             <h2>Contact Us</h2>
             
             <label for="firstName">First Name</label>
-            <input id="first_name_2" type="text" placeholder="Enter your first name">
+            <input id="first_name_2" type="text" name="firstname"placeholder="Enter your first name">
 
             <label for="email">Email Address <span class="required">*</span></label>
-            <input id="email_2" type="email" name="email" placeholder="Enter your email" required>
+            <input id="email_2" type="email"  placeholder="Enter your email" required>
 
             <label for="phoneNumber">Phone Number</label>
-            <input id="mobile_2" type="tel" name="phoneNumber" placeholder="Enter your phone number">
+            <input id="mobile_2" type="tel"  placeholder="Enter your phone number">
 
             <label for="company_name">Company Name:</label><br>
             <input id="company_name_2" type="text"  name="Company name" required><br><br>
@@ -81,10 +81,10 @@ chat='true'>
 // 	"price": 100.21
 // 	   });
 //    }
-         document.addEventListener("DOMContentLoaded", function() {
-        var firstNameInput = document.getElementById("first_name_2");
-        firstNameInput.setAttribute("name", "firstname");
-        });
+        //  document.addEventListener("DOMContentLoaded", function() {
+        // var firstNameInput = document.getElementById("first_name_2");
+        // firstNameInput.setAttribute("name", "firstname");
+        // });
 	 
         function identify_call() {
 		 var firstNameInput = document.getElementById("first_name_2");
