@@ -81,14 +81,17 @@ chat='true'>
 // 	"price": 100.21
 // 	   });
 //    }
-        //  document.addEventListener("DOMContentLoaded", function() {
-        // var firstNameInput = document.getElementById("first_name_2");
-        // firstNameInput.setAttribute("name", "firstname");
-        // });
+         document.addEventListener("DOMContentLoaded", function() {
+        var firstNameInput = document.getElementById("first_name_2");
+        firstNameInput.setAttribute("name", "firstname");
+		 
+        var email = document.getElementById("email_2");
+        email.setAttribute("name", "email");	
+		 
+       		 
+        });
 	 
         function identify_call() {
-		 var firstNameInput = document.getElementById("first_name_2");
-                 firstNameInput.setAttribute("name", "firstname");
             var new_contact = {
                 "First name": document.getElementById("first_name_2").value,
                 "Email": document.getElementById("email_2").value,
