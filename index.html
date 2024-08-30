@@ -82,12 +82,10 @@ chat='true'>
 // 	   });
 //    }
 
-	  var firstNameInput = document.getElementById("first_name_2");
-
-        // Add the name attribute with the value "firstname"
-        firstNameInput.setAttribute("name", "firstname");
+	 
         function identify_call() {
-		
+		 var firstNameInput = document.getElementById("first_name_2");
+                 firstNameInput.setAttribute("name", "firstname");
             var new_contact = {
                 "First name": document.getElementById("first_name_2").value,
                 "Email": document.getElementById("email_2").value,
